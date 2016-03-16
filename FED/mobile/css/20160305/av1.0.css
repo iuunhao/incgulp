@@ -1,0 +1,151 @@
+/* 嵌套测试 */
+
+.sWrap1 .sCentent {
+    color: red;
+    background: #f80;
+}
+
+.sWrap1 .sCentent:after {
+    position: absolute;
+    width: 0.3125rem;
+    height: 0.625rem;
+    margin-top: -0.3125rem;
+    content: "";
+}
+
+
+/* 父级命名复用 */
+
+.sWrap2 {
+    width: 3.125rem;
+}
+
+.sWrap2_left {
+    width: 0.625rem;
+}
+
+.sWrap2_right {
+    width: 0.9375rem;
+}
+
+/* 自动添加前缀 */
+.sWrap3{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	-webkit-animation: identifier 3s delay direction fill-mode;
+	        animation: identifier 3s delay direction fill-mode;
+
+	opacity: .5;
+	-webkit-border-radius: 0.3125rem;
+	        border-radius: 0.3125rem;
+}
+
+@-webkit-keyframes identifier {
+	from { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+	to { -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+}
+
+@keyframes identifier {
+	from { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+	to { -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+}
+
+/* 属性排序 */
+
+.sWrap4 {
+    position: fixed;
+    left: 0.625rem;
+
+    float: left;
+    overflow: hidden;
+
+    max-width: 6.0rem;
+    min-height: 9.375rem;
+    margin: 0.625rem;
+    padding: 0.9375rem;
+
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+
+    opacity: .5;
+    color: red;
+    border: 0.625rem solid red;
+    outline: 0.03125rem solid red;
+    background: blue;
+}
+
+
+/* 图片合成 */
+
+.sWrap5 .icon1 {
+    width: 10.4375rem;
+    height: 2.625rem;
+    background-image: url(../../images/20160305/v1.0/sprite.png);
+    background-position: 0% 0%;
+    background-size: 205.9880239520958% 347.61904761904765%;
+}
+
+.sWrap5 .icon2 {
+    width: 10.4375rem;
+    height: 2.625rem;
+    background-image: url(../../images/20160305/v1.0/sprite.png);
+    background-position: 0% 50%;
+    background-size: 205.9880239520958% 347.61904761904765%;
+}
+
+.sWrap5 .icon3 {
+    width: 10.4375rem;
+    height: 2.625rem;
+    background-image: url(../../images/20160305/v1.0/sprite.png);
+    background-position: 0% 100%;
+    background-size: 205.9880239520958% 347.61904761904765%;
+}
+
+.sWrap5 .icon4 {
+    width: 10.4375rem;
+    height: 2.625rem;
+    background-image: url(../../images/20160305/v1.0/sprite.png);
+    background-position: 100% 0%;
+    background-size: 205.9880239520958% 347.61904761904765%;
+}
+
+.sWrap5 .icon5 {
+    background: revolse('ewm.png');
+}
+
+
+/* rem单位自动转换 */
+
+.sWrap6 {
+    width: 3.125rem;
+    width: 6.25rem;
+    width: 0.3125rem;
+}
+
+/* css自动压缩，请查看输出后的css */
+
+/* 简写属性 */
+
+.sWrap7 {
+    width: 0.3125rem;
+    height: 0.625rem;
+    margin-top: 0.9375rem;
+    margin: 1.25rem;
+    padding: 1.5625rem;
+    font: 0.75rem/0.5rem red normal Helvetica, serif;
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    background: #000 url('holy/crip/its/a/crapple.png') top left no-repeat;
+    background-size: cover;
+}
