@@ -11,12 +11,12 @@
     "license": "MIT"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
     "autoprefixer": "^6.3.3",
     "autorem": "^0.1.1",
     "browser-sync": "^2.11.1",
     "css-mqpacker": "^4.0.0",
     "cssgrace": "^3.0.0",
-    "gulp": "^3.9.1",
     "gulp-cache": "^0.4.2",
     "gulp-clean": "^0.3.2",
     "gulp-copy": "0.0.2",
@@ -41,6 +41,12 @@
     "postcss-sorting": "^1.2.1",
     "postcss-sprites": "^3.1.0",
     "del": "^2.2.0",
-    "ip": "^1.1.2"
+    "ip": "^1.1.2",
+    "postcss-opacity": "^3.0.0",
+    "postcss-messages": "^0.2.2",
+    "postcss-import": "^8.0.2",
+    "precss": "^1.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rem": "^1.1.5"
   }
 }

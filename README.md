@@ -15,6 +15,7 @@ cnpm install -g gulp                                            //安装全局gu
 以下为所有`task`
 ```
 gulp             //默认task
+gulp rem
 gulp bak         //备份原始图片
 gulp min         //压缩图片
 gulp clean       //删除原始图片
